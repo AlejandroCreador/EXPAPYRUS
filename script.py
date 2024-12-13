@@ -19,6 +19,9 @@ class PDFOCRExtractor:
         self.pdf_path = pdf_path
         self.temp_dir = tempfile.mkdtemp()
         configure_logger()
+        
+        # Configuración de pytesseract (asegúrate de que esté en el PATH o configura la ruta manualmente)
+        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR'  # Cambia según tu instalación
 
     def convert_pdf_to_images(self):
         logging.info("Convirtiendo el PDF a imágenes...")
@@ -44,6 +47,10 @@ class PDFOCRExtractor:
     def extract_text_from_pdf(self):
         logging.info("Iniciando extracción de texto del PDF...")
         images = self.convert_pdf_to_images()
+        if not images:
+            logging.error("No se pudieron convertir las páginas del PDF. Proceso abortado.")
+            return ""
+        
         all_text = []
         for index, image in enumerate(images):
             text = self.extract_text_from_image(image)
@@ -53,12 +60,10 @@ class PDFOCRExtractor:
         return '\n\n'.join(all_text)
 
     def format_extracted_text(self, text):
-        # Aquí se aplican mejoras de formato al texto extraído y se añaden marcaciones para texto ilegible.
         logging.info("Formateando el texto extraído...")
         placeholder = "[VACÍO POR TEXTO MANUSCRITO NO LEGIBLE]"
         formatted_text = re.sub(r'\n{3,}', '\n\n', text)  # Limita saltos de línea consecutivos a un máximo de 2.
         formatted_text = re.sub(r'\s+', ' ', formatted_text).strip()  # Elimina espacios en blanco excesivos.
-        # Reemplaza patrones comunes de texto ilegible con una marcación
         formatted_text = re.sub(r'\.{2,}', placeholder, formatted_text)  # Detecta "..." y similares.
         formatted_text = re.sub(r'_{2,}', placeholder, formatted_text)  # Detecta guiones bajos repetidos.
         return formatted_text
@@ -106,20 +111,15 @@ def main():
 
     # Extraer texto y guardar en un archivo de salida
     extracted_text = extractor.extract_text_from_pdf()
-    extractor.save_text_to_file(output_path, extracted_text)
+    if extracted_text.strip():  # Verifica que haya texto extraído antes de guardar
+        extractor.save_text_to_file(output_path, extracted_text)
+        messagebox.showinfo("Proceso completado", f"El texto extraído se ha guardado en:\n{output_path}")
+    else:
+        logging.warning("No se extrajo texto del PDF.")
+        messagebox.showwarning("Proceso incompleto", "No se pudo extraer texto del PDF.")
 
     # Limpieza de los archivos temporales
     extractor.clean_up()
 
-    # Mostrar mensaje de finalización
-    messagebox.showinfo("Proceso completado", f"El texto extraído se ha guardado en:\n{output_path}")
-
 if __name__ == "__main__":
     main()
-
-# Dependencias necesarias:
-# - pytesseract: pip install pytesseract
-# - pdf2image: pip install pdf2image
-# - Pillow: pip install Pillow
-# - Tesseract OCR (instalar y agregar al PATH)
-# - Poppler (instalar y agregar al PATH)
