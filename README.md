@@ -1,4 +1,4 @@
-# PDF-image-to-text
+# EXPAPYRUS: From physical images to digital text.
 
 The proposed Python program aims to extract text from images within scanned PDF files, translate the extracted text into Spanish, and highlight sections where text extraction was unsuccessful. The program utilizes the following libraries and tools:
 
