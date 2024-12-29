@@ -1,125 +1,215 @@
+"""
+PDF OCR Text Extractor
+A tool to extract and process text from PDF files using OCR technology.
+Author: [Your Name]
+Version: 1.0.1
+"""
+
 import os
+import logging
+import re
+import tempfile
+from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional
+
 import pytesseract
 from pdf2image import convert_from_path
 from PIL import Image
-import re
-import logging
-import tempfile
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-def configure_logger():
-    # Configuración básica del logger
-    logging.basicConfig(level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s - %(message)s',
-                        handlers=[logging.StreamHandler()])
+# Constants
+DEFAULT_DPI = 300
+SUPPORTED_LANGUAGES = 'eng+spa+cat'
+PLACEHOLDER_TEXT = "[VACÍO POR TEXTO MANUSCRITO NO LEGIBLE]"
+OUTPUT_SUFFIX = "_texto_extraido.txt"
+
+@dataclass
+class OCRConfig:
+    """Configuration settings for OCR processing."""
+    tesseract_path: str = r'C:\Program Files (x86)\Tesseract-OCR'
+    dpi: int = DEFAULT_DPI
+    languages: str = SUPPORTED_LANGUAGES
+
+class LoggerSetup:
+    """Configure and manage logging settings."""
+    
+    @staticmethod
+    def configure() -> None:
+        """Set up basic logging configuration."""
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.StreamHandler(),
+                logging.FileHandler('pdf_ocr.log', encoding='utf-8')
+            ]
+        )
+
+class TextProcessor:
+    """Handle text processing and formatting operations."""
+    
+    @staticmethod
+    def format_text(text: str) -> str:
+        """Format extracted text according to specified rules."""
+        if not text:
+            return ""
+            
+        formatting_rules = [
+            (r'\n{3,}', '\n\n'),              # Limit consecutive line breaks
+            (r'\s+', ' '),                     # Remove excessive whitespace
+            (r'\.{2,}', PLACEHOLDER_TEXT),     # Replace ellipsis
+            (r'_{2,}', PLACEHOLDER_TEXT),      # Replace underscores
+        ]
+        
+        formatted_text = text
+        for pattern, replacement in formatting_rules:
+            formatted_text = re.sub(pattern, replacement, formatted_text)
+            
+        return formatted_text.strip()
 
 class PDFOCRExtractor:
-    def __init__(self, pdf_path):
-        self.pdf_path = pdf_path
-        self.temp_dir = tempfile.mkdtemp()
-        configure_logger()
+    """Main class for PDF OCR text extraction."""
+    
+    def __init__(self, config: OCRConfig):
+        """Initialize the PDF OCR extractor with configuration."""
+        self.config = config
+        self.temp_dir = Path(tempfile.mkdtemp())
+        pytesseract.pytesseract.tesseract_cmd = config.tesseract_path
+        self.text_processor = TextProcessor()
         
-        # Configuración de pytesseract (asegúrate de que esté en el PATH o configura la ruta manualmente)
-        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR'  # Cambia según tu instalación
-
-    def convert_pdf_to_images(self):
-        logging.info("Convirtiendo el PDF a imágenes...")
+    def process_pdf(self, pdf_path: Path) -> Optional[str]:
+        """Process PDF file and extract text."""
         try:
-            images = convert_from_path(self.pdf_path, dpi=300, output_folder=self.temp_dir)
-            logging.info(f"Total de páginas convertidas: {len(images)}")
+            images = self._convert_pdf_to_images(pdf_path)
+            if not images:
+                raise ValueError("No images extracted from PDF")
+                
+            extracted_text = self._process_images(images)
+            return extracted_text
+            
+        except Exception as e:
+            logging.error(f"Error processing PDF: {e}")
+            return None
+        finally:
+            self._cleanup()
+            
+    def _convert_pdf_to_images(self, pdf_path: Path) -> List[Image.Image]:
+        """Convert PDF pages to images."""
+        logging.info(f"Converting PDF to images: {pdf_path}")
+        try:
+            images = convert_from_path(
+                pdf_path,
+                dpi=self.config.dpi,
+                output_folder=self.temp_dir
+            )
+            logging.info(f"Converted {len(images)} pages")
             return images
         except Exception as e:
-            logging.error(f"Error durante la conversión del PDF: {e}")
+            logging.error(f"PDF conversion failed: {e}")
             return []
-
-    def extract_text_from_image(self, image):
-        logging.info("Extrayendo texto de la imagen...")
-        try:
-            # Utiliza Tesseract para extraer el texto de la imagen.
-            text = pytesseract.image_to_string(image, lang='eng+spa+cat')
-            logging.info("Extracción de texto completada con éxito.")
-            return text
-        except Exception as e:
-            logging.error(f"Error al extraer el texto: {e}")
-            return ""
-
-    def extract_text_from_pdf(self):
-        logging.info("Iniciando extracción de texto del PDF...")
-        images = self.convert_pdf_to_images()
-        if not images:
-            logging.error("No se pudieron convertir las páginas del PDF. Proceso abortado.")
-            return ""
-        
+            
+    def _process_images(self, images: List[Image.Image]) -> str:
+        """Process images and extract text."""
         all_text = []
-        for index, image in enumerate(images):
-            text = self.extract_text_from_image(image)
-            formatted_text = self.format_extracted_text(text)
-            all_text.append(f"Página {index + 1}\n\n" + formatted_text)
-        logging.info("Extracción de texto del PDF finalizada.")
+        for idx, image in enumerate(images, 1):
+            logging.info(f"Processing page {idx}")
+            try:
+                text = pytesseract.image_to_string(
+                    image,
+                    lang=self.config.languages
+                )
+                formatted_text = self.text_processor.format_text(text)
+                all_text.append(f"Página {idx}\n\n{formatted_text}")
+            except Exception as e:
+                logging.error(f"Error processing page {idx}: {e}")
+                all_text.append(f"Página {idx}\n\n[ERROR DE PROCESAMIENTO]")
+                
         return '\n\n'.join(all_text)
-
-    def format_extracted_text(self, text):
-        logging.info("Formateando el texto extraído...")
-        placeholder = "[VACÍO POR TEXTO MANUSCRITO NO LEGIBLE]"
-        formatted_text = re.sub(r'\n{3,}', '\n\n', text)  # Limita saltos de línea consecutivos a un máximo de 2.
-        formatted_text = re.sub(r'\s+', ' ', formatted_text).strip()  # Elimina espacios en blanco excesivos.
-        formatted_text = re.sub(r'\.{2,}', placeholder, formatted_text)  # Detecta "..." y similares.
-        formatted_text = re.sub(r'_{2,}', placeholder, formatted_text)  # Detecta guiones bajos repetidos.
-        return formatted_text
-
-    def save_text_to_file(self, output_path, text):
-        logging.info(f"Guardando el texto extraído en {output_path}...")
+        
+    def _cleanup(self) -> None:
+        """Clean up temporary files."""
         try:
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(text)
-            logging.info("Texto guardado con éxito.")
+            for file in self.temp_dir.glob('*'):
+                file.unlink()
+            self.temp_dir.rmdir()
+            logging.info("Temporary files cleaned up")
         except Exception as e:
-            logging.error(f"Error al guardar el archivo de texto: {e}")
+            logging.error(f"Cleanup failed: {e}")
 
-    def clean_up(self):
-        logging.info("Limpiando archivos temporales...")
+class FileHandler:
+    """Handle file operations."""
+    
+    @staticmethod
+    def save_text(text: str, output_path: Path) -> bool:
+        """Save extracted text to file."""
         try:
-            for file in os.listdir(self.temp_dir):
-                os.remove(os.path.join(self.temp_dir, file))
-            os.rmdir(self.temp_dir)
-            logging.info("Archivos temporales eliminados.")
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_path.write_text(text, encoding='utf-8')
+            logging.info(f"Text saved to: {output_path}")
+            return True
         except Exception as e:
-            logging.error(f"Error durante la limpieza de archivos temporales: {e}")
+            logging.error(f"Failed to save text: {e}")
+            return False
+
+class GUI:
+    """Handle GUI operations."""
+    
+    @staticmethod
+    def select_pdf() -> Optional[Path]:
+        """Show file dialog to select PDF."""
+        root = tk.Tk()
+        root.withdraw()
+        file_path = filedialog.askopenfilename(
+            title="Seleccionar archivo PDF",
+            filetypes=[("Archivos PDF", "*.pdf")]
+        )
+        return Path(file_path) if file_path else None
+        
+    @staticmethod
+    def show_message(title: str, message: str, error: bool = False) -> None:
+        """Show message dialog."""
+        if error:
+            messagebox.showerror(title, message)
+        else:
+            messagebox.showinfo(title, message)
 
 def main():
-    # Crear una ventana oculta de Tkinter
-    root = tk.Tk()
-    root.withdraw()
-
-    # Mostrar un cuadro de diálogo para seleccionar el archivo PDF
-    pdf_path = filedialog.askopenfilename(
-        title="Seleccionar archivo PDF",
-        filetypes=[("Archivos PDF", "*.pdf")])
-
-    if not pdf_path:
-        messagebox.showinfo("Información", "No se seleccionó ningún archivo. El programa se cerrará.")
-        return
-
-    # Definir la ruta de salida
-    output_dir = os.path.dirname(pdf_path)
-    output_filename = os.path.splitext(os.path.basename(pdf_path))[0] + "_texto_extraido.txt"
-    output_path = os.path.join(output_dir, output_filename)
-
-    # Crear instancia del extractor OCR
-    extractor = PDFOCRExtractor(pdf_path)
-
-    # Extraer texto y guardar en un archivo de salida
-    extracted_text = extractor.extract_text_from_pdf()
-    if extracted_text.strip():  # Verifica que haya texto extraído antes de guardar
-        extractor.save_text_to_file(output_path, extracted_text)
-        messagebox.showinfo("Proceso completado", f"El texto extraído se ha guardado en:\n{output_path}")
-    else:
-        logging.warning("No se extrajo texto del PDF.")
-        messagebox.showwarning("Proceso incompleto", "No se pudo extraer texto del PDF.")
-
-    # Limpieza de los archivos temporales
-    extractor.clean_up()
+    """Main execution function."""
+    LoggerSetup.configure()
+    
+    try:
+        # Initialize configuration
+        config = OCRConfig()
+        
+        # Select PDF file
+        pdf_path = GUI.select_pdf()
+        if not pdf_path:
+            GUI.show_message("Información", "No se seleccionó ningún archivo.")
+            return
+            
+        # Initialize extractor
+        extractor = PDFOCRExtractor(config)
+        
+        # Process PDF
+        extracted_text = extractor.process_pdf(pdf_path)
+        if not extracted_text:
+            raise ValueError("No se pudo extraer texto del PDF")
+            
+        # Save results
+        output_path = pdf_path.parent / f"{pdf_path.stem}{OUTPUT_SUFFIX}"
+        if FileHandler.save_text(extracted_text, output_path):
+            GUI.show_message(
+                "Proceso completado",
+                f"El texto extraído se ha guardado en:\n{output_path}"
+            )
+        else:
+            raise ValueError("Error al guardar el archivo")
+            
+    except Exception as e:
+        logging.error(f"Application error: {e}")
+        GUI.show_message("Error", str(e), error=True)
 
 if __name__ == "__main__":
     main()

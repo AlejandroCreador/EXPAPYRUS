@@ -1,0 +1,5 @@
+pytesseract
+pdf2image
+Pillow
+logging
+tk
