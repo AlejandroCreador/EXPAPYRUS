@@ -1,21 +1,146 @@
-MIT License
+# SOLO LICENSE (Single Owner Licensing Option)
+Version 1.0, December 29, 2024
 
-Copyright (c) 2024 Alejandro 'Creador' D. A.
+## EXPAPYRUS SOFTWARE LICENSE
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. DEFINITIONS
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+"Software" refers to Expapyrus and all its source code, documentation, associated materials, trademarks, designs, and visual elements.
+"Licensor" refers to the copyright holder of the Software.
+"User" refers to any person or entity using the Software.
+"SOLO" refers to Single Owner Licensing Option, the present licensing framework.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. LICENSE GRANT
+
+This license grants the following rights, subject to the established restrictions:
+
+a) Personal and non-commercial use of the Software
+b) Study and modification of the source code for personal use
+c) Distribution of unmodified copies of the Software, provided it is non-profit
+d) Implementation for personal or academic use without profit purpose
+
+3. COMMERCIAL RESTRICTIONS
+
+The following are expressly prohibited without written authorization from the Licensor:
+
+a) Any commercial use of the Software
+b) Sale, rental, or lease of the Software
+c) Integration of the Software into commercial products or services
+d) Use of the Software to generate direct or indirect income
+e) Provision of commercial services based on the Software
+f) Use of the Software in business or commercial environments
+g) Monetization through advertising or sponsorship
+h) Use in payment or subscription platforms
+
+4. EXCLUSIVE RIGHTS
+
+The Licensor maintains:
+
+a) All commercial rights over the Software
+b) Exclusive right of monetization
+c) Authority to grant commercial licenses
+d) Intellectual property rights
+e) Control over commercial development
+f) Trademark and naming rights
+g) Authority to modify license terms
+
+5. COMMERCIAL DEFINITIONS
+
+Commercial use includes, but is not limited to:
+
+a) Implementation in companies or businesses
+b) Use in revenue-generating products or services
+c) Integration into commercial systems
+d) Use in payment platforms
+e) Software-based consulting services
+f) Commercial hosting or SaaS
+g) Paid courses or training
+h) Commercial support services
+i) Corporate implementations
+j) Use in commercial production environments
+
+6. COMMERCIAL AGREEMENTS
+
+For any commercial use:
+
+a) A specific written agreement with the Licensor is required
+b) Commercial terms will be established exclusively by the Licensor
+c) All agreements must specify:
+   - Specific payment terms
+   - Agreed usage metrics
+   - Defined reporting periods
+   - Renewal terms
+   - Termination conditions
+   - Post-termination obligations
+d) Agreements are not transferable without express authorization
+
+7. MODIFICATIONS AND DERIVATIVE WORKS
+
+a) Modifications for personal use are permitted
+b) Derivative works inherit the restrictions of this license
+c) Any distribution must maintain this license
+d) Derivative works cannot be commercialized without authorization
+e) Original attribution must be maintained
+f) Modifications must be documented
+
+8. TRADEMARK PROTECTION
+
+The name "Expapyrus" and associated logos are registered trademarks of the Licensor.
+
+a) Use of the name for derivative products is prohibited
+b) Use in marketing without authorization is prohibited
+c) Registration of related domains is prohibited
+d) Use in advertising without consent is prohibited
+e) Appropriate attribution is required in authorized uses
+
+9. AUDIT RIGHTS
+
+The Licensor reserves the right to:
+
+a) Audit software usage
+b) Request usage reports
+c) Verify license compliance
+d) Inspect implementations
+e) Request usage documentation
+f) Perform technical reviews
+
+10. TERMINATION
+
+The license will automatically terminate if:
+
+a) Any term of this license is violated
+b) Unauthorized commercial use is attempted
+c) Established restrictions are breached
+d) Trademark protection is infringed
+e) Audit is prevented
+
+11. WARRANTY AND LIABILITY
+
+a) The Software is provided "AS IS"
+b) No warranty of any kind is offered
+c) The Licensor shall not be liable for damages arising from the use of the Software
+d) The User assumes all risks associated with using the Software
+
+12. COMPLIANCE AND JURISDICTION
+
+a) Violations will result in immediate license termination
+b) The Licensor reserves the right to take legal action
+c) Legal costs of infractions will be the responsibility of the infringer
+d) Applicable jurisdiction will be the Licensor's domicile
+e) The legislation of the Licensor's country will apply
+
+13. ACCEPTANCE
+
+Use of the Software implies complete acceptance of this license.
+
+14. CONTACT
+
+For inquiries about commercial licenses or permissions:
+AlejandroCreador@proton.me
+
+15. VALIDITY
+
+This license is effective from the date of publication and remains valid until revoked or modified by the Licensor.
+
+Copyright (C) 2024 Alejandro Domingo Agustí
+All rights reserved.
