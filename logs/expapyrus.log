@@ -1,0 +1,205 @@
+2024-12-30 11:56:04,791 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 11:56:04,793 - INFO - Created default configuration file: settings.json
+2024-12-30 11:56:04,794 - INFO - Package initialization completed successfully
+2024-12-30 11:56:04,864 - INFO - Cleanup completed successfully
+2024-12-30 12:04:42,436 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:04:42,437 - INFO - Package initialization completed successfully
+2024-12-30 12:04:42,493 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:04:42,494 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\spa.traineddata
+2024-12-30 12:04:42,494 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\cat.traineddata
+2024-12-30 12:04:42,494 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:04:42,495 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:04:42,495 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:04:42,518 - INFO - Tesseract Version: 5.5.0.20241111
+2024-12-30 12:04:42,518 - ERROR - Tesseract verification failed: 'list' object has no attribute 'split'
+2024-12-30 12:04:42,518 - ERROR - OCR initialization failed: 'list' object has no attribute 'split'
+2024-12-30 12:04:42,519 - ERROR - Initialization error: 'list' object has no attribute 'split'
+2024-12-30 12:04:48,234 - INFO - Cleanup completed successfully
+2024-12-30 12:08:56,524 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:08:56,525 - INFO - Package initialization completed successfully
+2024-12-30 12:08:56,585 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:08:56,585 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:08:56,585 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:08:56,586 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:08:56,606 - INFO - Tesseract Version: 5.5.0.20241111
+2024-12-30 12:08:56,606 - ERROR - Tesseract verification failed: 'list' object has no attribute 'split'
+2024-12-30 12:08:56,606 - ERROR - OCR initialization failed: 'list' object has no attribute 'split'
+2024-12-30 12:08:56,606 - ERROR - Initialization error: 'list' object has no attribute 'split'
+2024-12-30 12:11:28,735 - INFO - Cleanup completed successfully
+2024-12-30 12:11:32,599 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:11:32,600 - INFO - Package initialization completed successfully
+2024-12-30 12:11:32,653 - ERROR - Initialization error: 'ExpapyrusGUI' object has no attribute 'setup_styles'
+2024-12-30 12:12:06,845 - INFO - Cleanup completed successfully
+2024-12-30 12:12:49,649 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:12:49,650 - INFO - Package initialization completed successfully
+2024-12-30 12:12:49,706 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:12:49,707 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:12:49,707 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:12:49,707 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:12:49,726 - INFO - Tesseract Version: 5.5.0.20241111
+2024-12-30 12:12:49,727 - ERROR - Tesseract verification failed: 'list' object has no attribute 'split'
+2024-12-30 12:12:49,727 - ERROR - OCR initialization failed: 'list' object has no attribute 'split'
+2024-12-30 12:12:49,727 - ERROR - Initialization error: 'list' object has no attribute 'split'
+2024-12-30 12:12:58,533 - INFO - Cleanup completed successfully
+2024-12-30 12:16:01,137 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:16:01,138 - INFO - Package initialization completed successfully
+2024-12-30 12:16:01,195 - ERROR - OCR initialization failed: 'ExpapyrusGUI' object has no attribute 'update_progress'
+2024-12-30 12:16:01,195 - ERROR - Initialization error: 'ExpapyrusGUI' object has no attribute 'update_progress'
+2024-12-30 12:18:18,950 - INFO - Cleanup completed successfully
+2024-12-30 12:19:00,998 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:19:00,999 - INFO - Package initialization completed successfully
+2024-12-30 12:19:01,057 - INFO - OCR initialization successful
+2024-12-30 12:19:18,713 - ERROR - Processing error: Languages must be a list of language codes
+2024-12-30 12:19:39,381 - ERROR - Processing error: Languages must be a list of language codes
+2024-12-30 12:20:50,723 - INFO - Cleanup completed successfully
+2024-12-30 12:20:53,060 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:20:53,061 - INFO - Package initialization completed successfully
+2024-12-30 12:20:53,116 - INFO - OCR initialization successful
+2024-12-30 12:21:01,645 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado.pdf stdout --tessdata-dir C:\Program Files\Tesseract-OCR\tessdata -l spa
+2024-12-30 12:21:01,651 - INFO - Saved output to: C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado_20241230_122101_extracted_text.txt
+2024-12-30 12:23:36,240 - INFO - Cleanup completed successfully
+2024-12-30 12:23:39,602 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:23:39,603 - INFO - Package initialization completed successfully
+2024-12-30 12:23:39,661 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:23:39,662 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:23:39,662 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:23:39,662 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:23:39,662 - INFO - OCR initialization successful
+2024-12-30 12:23:49,096 - ERROR - Processing error: 'list' object has no attribute 'split'
+2024-12-30 12:26:16,087 - INFO - Cleanup completed successfully
+2024-12-30 12:26:19,975 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:26:19,976 - INFO - Package initialization completed successfully
+2024-12-30 12:26:20,034 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:26:20,035 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:26:20,035 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:26:20,035 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:26:20,036 - INFO - OCR initialization successful
+2024-12-30 12:26:25,567 - ERROR - Processing error: 'list' object has no attribute 'split'
+2024-12-30 12:28:14,634 - INFO - Cleanup completed successfully
+2024-12-30 12:28:25,404 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:28:25,404 - INFO - Package initialization completed successfully
+2024-12-30 12:28:25,462 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:28:25,462 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:28:25,463 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:28:25,463 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:28:25,463 - INFO - OCR initialization successful
+2024-12-30 12:28:30,649 - ERROR - Processing error: 'list' object has no attribute 'split'
+2024-12-30 12:28:37,740 - INFO - Cleanup completed successfully
+2024-12-30 12:31:28,053 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:31:28,053 - INFO - Package initialization completed successfully
+2024-12-30 12:31:28,110 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:31:28,110 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:31:28,111 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:31:28,111 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:31:28,111 - INFO - OCR initialization successful
+2024-12-30 12:31:33,798 - ERROR - Processing error: 'list' object has no attribute 'split'
+2024-12-30 12:33:45,647 - INFO - Cleanup completed successfully
+2024-12-30 12:33:48,441 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:33:48,442 - INFO - Package initialization completed successfully
+2024-12-30 12:33:48,501 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:33:48,501 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:33:48,502 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:33:48,502 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:33:48,502 - INFO - OCR initialization successful
+2024-12-30 12:33:53,767 - ERROR - Processing error: 'list' object has no attribute 'split'
+2024-12-30 12:37:25,984 - INFO - Cleanup completed successfully
+2024-12-30 12:37:27,616 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:37:27,617 - INFO - Package initialization completed successfully
+2024-12-30 12:37:27,677 - INFO - Verified language file: C:\Program Files\Tesseract-OCR\tessdata\eng.traineddata
+2024-12-30 12:37:27,677 - INFO - TESSDATA_PREFIX set to: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:37:27,678 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:37:27,678 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:37:27,678 - INFO - OCR initialization successful
+2024-12-30 12:37:33,464 - ERROR - Language configuration failed: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\gui.py", line 240, in _process_thread
+    self.extractor.config.set_languages([selected_language])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\config.py", line 78, in set_languages
+    self.languages = languages.split('+')
+                     ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+2024-12-30 12:37:33,466 - ERROR - Processing error: 'list' object has no attribute 'split'
+Traceback (most recent call last):
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\gui.py", line 240, in _process_thread
+    self.extractor.config.set_languages([selected_language])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\config.py", line 78, in set_languages
+    self.languages = languages.split('+')
+                     ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+2024-12-30 12:41:06,122 - INFO - Cleanup completed successfully
+2024-12-30 12:41:07,381 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:41:07,382 - INFO - Package initialization completed successfully
+2024-12-30 12:41:07,438 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:41:07,438 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:41:07,438 - INFO - OCR initialization successful
+2024-12-30 12:41:13,196 - INFO - Languages set to: ['spa']
+2024-12-30 12:41:13,197 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado.pdf stdout --tessdata-dir C:\Program Files\Tesseract-OCR\tessdata -l spa --dpi 300
+2024-12-30 12:41:13,538 - ERROR - Tesseract processing failed: Command '['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Proton Drive\\My files\\Documentación\\Calle Barraca 8-2\\CartaAbogado.pdf', 'stdout', '--tessdata-dir', 'C:\\Program Files\\Tesseract-OCR\\tessdata', '-l', 'spa', '--dpi', '300']' returned non-zero exit status 1.
+2024-12-30 12:41:13,538 - ERROR - Text extraction failed: Command '['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Proton Drive\\My files\\Documentación\\Calle Barraca 8-2\\CartaAbogado.pdf', 'stdout', '--tessdata-dir', 'C:\\Program Files\\Tesseract-OCR\\tessdata', '-l', 'spa', '--dpi', '300']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\gui.py", line 247, in _process_thread
+    extracted_text = self.extractor.process_pdf(pdf_path)
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\ocr_processor.py", line 47, in process_pdf
+    result = subprocess.run(command, capture_output=True, text=True, check=True)
+  File "C:\Program Files\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Proton Drive\\My files\\Documentación\\Calle Barraca 8-2\\CartaAbogado.pdf', 'stdout', '--tessdata-dir', 'C:\\Program Files\\Tesseract-OCR\\tessdata', '-l', 'spa', '--dpi', '300']' returned non-zero exit status 1.
+2024-12-30 12:41:13,546 - ERROR - Processing error: Command '['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Proton Drive\\My files\\Documentación\\Calle Barraca 8-2\\CartaAbogado.pdf', 'stdout', '--tessdata-dir', 'C:\\Program Files\\Tesseract-OCR\\tessdata', '-l', 'spa', '--dpi', '300']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\gui.py", line 247, in _process_thread
+    extracted_text = self.extractor.process_pdf(pdf_path)
+  File "c:\Proton Drive\My files\Aplicaciones\EXPAPYRUS\src\ocr_processor.py", line 47, in process_pdf
+    result = subprocess.run(command, capture_output=True, text=True, check=True)
+  File "C:\Program Files\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Proton Drive\\My files\\Documentación\\Calle Barraca 8-2\\CartaAbogado.pdf', 'stdout', '--tessdata-dir', 'C:\\Program Files\\Tesseract-OCR\\tessdata', '-l', 'spa', '--dpi', '300']' returned non-zero exit status 1.
+2024-12-30 12:42:36,961 - INFO - Cleanup completed successfully
+2024-12-30 12:42:37,234 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:42:37,235 - INFO - Package initialization completed successfully
+2024-12-30 12:42:37,295 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 12:42:37,295 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 12:42:37,296 - INFO - OCR initialization successful
+2024-12-30 12:42:43,942 - INFO - Languages set to: ['spa']
+2024-12-30 12:42:43,944 - INFO - Converting PDF to images: C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado.pdf
+2024-12-30 12:42:47,788 - INFO - Saved output to: C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado_20241230_124247_extracted_text.txt
+2024-12-30 12:46:18,389 - INFO - Cleanup completed successfully
+2024-12-30 12:46:22,253 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:46:22,254 - INFO - Package initialization completed successfully
+2024-12-30 12:46:22,361 - INFO - Cleanup completed successfully
+2024-12-30 12:46:25,500 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:46:25,501 - INFO - Package initialization completed successfully
+2024-12-30 12:46:25,568 - INFO - Cleanup completed successfully
+2024-12-30 12:47:38,593 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:47:38,595 - INFO - Package initialization completed successfully
+2024-12-30 12:47:38,654 - ERROR - Initialization error: 'ExpapyrusGUI' object has no attribute 'setup_styles'
+2024-12-30 12:47:41,893 - INFO - Cleanup completed successfully
+2024-12-30 12:49:00,703 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:49:00,704 - INFO - Package initialization completed successfully
+2024-12-30 12:49:00,767 - ERROR - Initialization error: 'ExpapyrusGUI' object has no attribute 'create_menu'
+2024-12-30 12:49:04,232 - INFO - Cleanup completed successfully
+2024-12-30 12:56:05,119 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:56:05,120 - INFO - Package initialization completed successfully
+2024-12-30 12:56:05,185 - ERROR - Error de inicialización: 'ExpapyrusGUI' object has no attribute 'setup_window'
+2024-12-30 12:56:11,432 - INFO - Cleanup completed successfully
+2024-12-30 12:58:41,946 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 12:58:41,947 - INFO - Package initialization completed successfully
+2024-12-30 12:58:42,023 - ERROR - Error de inicialización: 'ExpapyrusGUI' object has no attribute 'show_about'
+2024-12-30 13:00:49,567 - INFO - Cleanup completed successfully
+2024-12-30 13:00:51,200 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 13:00:51,201 - INFO - Package initialization completed successfully
+2024-12-30 13:00:51,291 - ERROR - Error de inicialización: 'ExpapyrusGUI' object has no attribute 'initialize_ocr'
+2024-12-30 13:05:01,214 - INFO - Cleanup completed successfully
+2024-12-30 13:05:02,284 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 13:05:02,285 - INFO - Package initialization completed successfully
+2024-12-30 13:05:02,363 - INFO - Cleanup completed successfully
+2024-12-30 13:24:56,017 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 13:24:56,018 - INFO - Package initialization completed successfully
+2024-12-30 13:24:56,092 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 13:24:56,093 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 13:24:56,093 - INFO - OCR initialization successful
+2024-12-30 13:25:02,789 - INFO - Converting PDF to images: C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado.pdf
+2024-12-30 13:25:36,972 - INFO - Cleanup completed successfully

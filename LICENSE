@@ -1,16 +1,17 @@
 # SOLO LICENSE (Single Owner Licensing Option)
+
 Version 1.0, December 29, 2024
 
 ## EXPAPYRUS SOFTWARE LICENSE
 
-1. DEFINITIONS
+### 1. DEFINITIONS
 
 "Software" refers to Expapyrus and all its source code, documentation, associated materials, trademarks, designs, and visual elements.
 "Licensor" refers to the copyright holder of the Software.
 "User" refers to any person or entity using the Software.
 "SOLO" refers to Single Owner Licensing Option, the present licensing framework.
 
-2. LICENSE GRANT
+### 2. LICENSE GRANT
 
 This license grants the following rights, subject to the established restrictions:
 
@@ -19,7 +20,7 @@ b) Study and modification of the source code for personal use
 c) Distribution of unmodified copies of the Software, provided it is non-profit
 d) Implementation for personal or academic use without profit purpose
 
-3. COMMERCIAL RESTRICTIONS
+### 3. COMMERCIAL RESTRICTIONS
 
 The following are expressly prohibited without written authorization from the Licensor:
 
@@ -32,7 +33,7 @@ f) Use of the Software in business or commercial environments
 g) Monetization through advertising or sponsorship
 h) Use in payment or subscription platforms
 
-4. EXCLUSIVE RIGHTS
+### 4. EXCLUSIVE RIGHTS
 
 The Licensor maintains:
 
@@ -44,7 +45,7 @@ e) Control over commercial development
 f) Trademark and naming rights
 g) Authority to modify license terms
 
-5. COMMERCIAL DEFINITIONS
+### 5. COMMERCIAL DEFINITIONS
 
 Commercial use includes, but is not limited to:
 
@@ -59,22 +60,23 @@ h) Commercial support services
 i) Corporate implementations
 j) Use in commercial production environments
 
-6. COMMERCIAL AGREEMENTS
+### 6. COMMERCIAL AGREEMENTS
 
 For any commercial use:
 
 a) A specific written agreement with the Licensor is required
 b) Commercial terms will be established exclusively by the Licensor
 c) All agreements must specify:
-   - Specific payment terms
-   - Agreed usage metrics
-   - Defined reporting periods
-   - Renewal terms
-   - Termination conditions
-   - Post-termination obligations
+
+- Specific payment terms
+- Agreed usage metrics
+- Defined reporting periods
+- Renewal terms
+- Termination conditions
+- Post-termination obligations
 d) Agreements are not transferable without express authorization
 
-7. MODIFICATIONS AND DERIVATIVE WORKS
+### 7. MODIFICATIONS AND DERIVATIVE WORKS
 
 a) Modifications for personal use are permitted
 b) Derivative works inherit the restrictions of this license
@@ -83,7 +85,7 @@ d) Derivative works cannot be commercialized without authorization
 e) Original attribution must be maintained
 f) Modifications must be documented
 
-8. TRADEMARK PROTECTION
+### 8. TRADEMARK PROTECTION
 
 The name "Expapyrus" and associated logos are registered trademarks of the Licensor.
 
@@ -93,7 +95,7 @@ c) Registration of related domains is prohibited
 d) Use in advertising without consent is prohibited
 e) Appropriate attribution is required in authorized uses
 
-9. AUDIT RIGHTS
+### 9. AUDIT RIGHTS
 
 The Licensor reserves the right to:
 
@@ -104,7 +106,7 @@ d) Inspect implementations
 e) Request usage documentation
 f) Perform technical reviews
 
-10. TERMINATION
+### 10. TERMINATION
 
 The license will automatically terminate if:
 
@@ -114,14 +116,14 @@ c) Established restrictions are breached
 d) Trademark protection is infringed
 e) Audit is prevented
 
-11. WARRANTY AND LIABILITY
+### 11. WARRANTY AND LIABILITY
 
 a) The Software is provided "AS IS"
 b) No warranty of any kind is offered
 c) The Licensor shall not be liable for damages arising from the use of the Software
 d) The User assumes all risks associated with using the Software
 
-12. COMPLIANCE AND JURISDICTION
+### 12. COMPLIANCE AND JURISDICTION
 
 a) Violations will result in immediate license termination
 b) The Licensor reserves the right to take legal action
@@ -129,16 +131,16 @@ c) Legal costs of infractions will be the responsibility of the infringer
 d) Applicable jurisdiction will be the Licensor's domicile
 e) The legislation of the Licensor's country will apply
 
-13. ACCEPTANCE
+### 13. ACCEPTANCE
 
 Use of the Software implies complete acceptance of this license.
 
-14. CONTACT
+### 14. CONTACT
 
 For inquiries about commercial licenses or permissions:
-AlejandroCreador@proton.me
+<AlejandroCreador@proton.me>
 
-15. VALIDITY
+### 15. VALIDITY
 
 This license is effective from the date of publication and remains valid until revoked or modified by the Licensor.
 
