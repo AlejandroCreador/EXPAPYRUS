@@ -1,0 +1,8 @@
+2024-12-30 13:56:18,446 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 13:56:18,449 - INFO - Created default configuration file: settings.json
+2024-12-30 13:56:18,449 - INFO - Package initialization completed successfully
+2024-12-30 13:56:18,537 - INFO - Tesseract command: C:\Program Files\Tesseract-OCR\tesseract.exe
+2024-12-30 13:56:18,537 - INFO - Path to tessdata: C:\Program Files\Tesseract-OCR\tessdata
+2024-12-30 13:56:18,537 - INFO - OCR initialization successful
+2024-12-30 13:56:27,823 - INFO - Converting PDF to images: C:\Proton Drive\My files\Documentación\Identidad y Certificados\CertificadoNacimiento.pdf
+2024-12-31 11:14:38,826 - INFO - Cleanup completed successfully

@@ -203,3 +203,6 @@ subprocess.CalledProcessError: Command '['C:\\Program Files\\Tesseract-OCR\\tess
 2024-12-30 13:24:56,093 - INFO - OCR initialization successful
 2024-12-30 13:25:02,789 - INFO - Converting PDF to images: C:\Proton Drive\My files\Documentación\Calle Barraca 8-2\CartaAbogado.pdf
 2024-12-30 13:25:36,972 - INFO - Cleanup completed successfully
+2024-12-30 13:52:54,460 - INFO - Initializing Expapyrus v1.1.0
+2024-12-30 13:52:54,461 - INFO - Package initialization completed successfully
+2024-12-30 13:52:57,774 - INFO - Cleanup completed successfully

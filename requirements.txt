@@ -1,5 +1,147 @@
+# Core OCR and PDF Processing
 pytesseract
 pdf2image
+PyPDF2
+pdfminer.six
+poppler-utils
+
+# Image Processing
 Pillow
-logging
+opencv-python
+numpy
+scikit-image
+
+# GUI and Interface
 tk
+ttkthemes
+customtkinter
+darkdetect
+sv-ttk
+
+# Build and Packaging Tools
+pyinstaller
+cx_Freeze
+wheel
+setuptools
+py2exe
+auto-py-to-exe
+
+# Development and Testing
+black
+pylint
+mypy
+pytest
+pytest-cov
+flake8
+autopep8
+isort
+
+# Utilities and Helpers
+python-dotenv
+typing-extensions
+colorama
+tqdm
+rich
+click
+pyyaml
+
+# System Integration
+pywin32; platform_system == "Windows"
+psutil
+watchdog
+
+# Progress Bars and UI Enhancement
+alive-progress
+progress
+progressbar2
+
+# File Management
+send2trash
+pyfilesystem2
+pathspec
+
+# Error Handling and Logging
+loguru
+structlog
+
+# Date and Time
+python-dateutil
+pytz
+
+# Async Support
+asyncio
+aiofiles
+aiohttp
+
+# Security
+cryptography
+bcrypt
+
+# Configuration
+configparser
+appdirs
+
+# Clipboard Support
+pyperclip
+clipboard
+
+# Process Management
+psutil
+python-daemon; platform_system != "Windows"
+
+# Network
+requests
+urllib3
+certifi
+
+# Compression
+py7zr
+zipfile38
+
+# Memory Management
+memory-profiler
+psutil
+
+# Performance Monitoring
+py-spy
+line-profiler
+
+# Documentation
+Sphinx
+sphinx-rtd-theme
+mkdocs
+pdoc3
+
+# Type Checking
+mypy
+typing-extensions
+typeguard
+
+# Code Quality
+bandit
+safety
+radon
+
+# Debugging
+ipdb
+pudb
+icecream
+
+# Optimization
+numba
+cython
+
+# Compatibility
+six
+future
+importlib-metadata
+
+# CLI Enhancement
+click
+typer
+rich-click
+questionary
+
+# Resource Management
+psutil
+py-cpuinfo
